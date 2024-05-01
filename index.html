@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!--
+  flatironinstitute.org
+  -->
+<html>
+  <head>
+    <!-- TODO: Add your name -->
+    <title>Bruno Régaldo-Saint Blancard | Flatiron Institute</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- TODO: If you wish to use your center color scheme, please replace main.css with the center acronymn ex:
+      cca.css, ccb.css, etc
+    -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <!-- TODO: Add a personal photo in /images folder or switch src link to avatar.jpg for a gray circle -->
+        <a href="#" class="image avatar"
+          ><img src="images/photo.jpg" alt=""
+        /></a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a
+              href="#about"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#research"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Research</a
+            >
+          </li>
+          <li>
+            <a
+              href="#papers"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Papers</a
+            >
+          </li>
+          <li>
+            <a
+              href="#software"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Software</a
+            >
+          </li>
+          <li>
+            <a
+              href="#teaching"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Teaching</a
+            >
+          </li>
+          <li>
+            <a
+              href="#talks"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Talks</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0)"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main -->
+    <div id="main">
+      <!-- About -->
+      <section id="about">
+        <header class="major">
+          <h2>Bruno Régaldo-Saint Blancard, Ph.D.</h2>
+        </header>
+        <p>
+          I am a Research Fellow in the
+          <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/" rel="noreferrer noopener" target="_blank">Center for Computational Mathematics</a> at the <a href="https://www.simonsfoundation.org/flatiron/" rel="noreferrer noopener" target="_blank">Flatiron Institute</a> in New York, where I work at the interface between (astro)physics and data science.
+          I develop statistical methods for astrophysics, cosmology, and beyond using signal processing and machine learning. I tackle various problems including generative modeling, inference, denoising, and source separation.
+          
+          <br><br>These problems naturally emerged from my applied research in modeling interstellar dust emission, analyzing cosmic microwave background data, and studying galaxy clustering (as part of the <a href="https://changhoonhahn.github.io/simbig/current/" rel="noreferrer noopener" target="_blank">SimBIG collaboration</a>).
+          
+          <br><br>Lately, I have been particularly focused on deep generative models and their application to scientific endeavors. I am also actively involved in the <a href="https://polymathic-ai.org/" rel="noreferrer noopener" target="_blank">Polymathic AI initiative</a>, which aims to leverage these models for the development of foundation models for science.
+
+          <br><br>Before my fellowship, I earned a Ph.D. in Astrophysics in 2021 from the École Normale Supérieure, Paris. Prior to that, I graduated from the Ecole Polytechnique (X2014) and obtained a Master's degree in Astrophysics from the Observatoire de Paris. <a href="pdfs/CV.pdf" rel="noreferrer noopener" target="_blank">Download my CV</a>.
+
+          <!-- On the applied side, my research interests include the modeling of the interstellar dust, the analysis of cosmic microwave background data, and the analysis of galaxy clustering.
+          <br>On the methodological side, I am interested in the development of data-driven models using signal processing techniques (e.g., wavelet scattering transform) and machine learning (e.g., deep generative models). I am also interested in simulation-based inference methods. More recently, I have been also 
+          
+          <br><br>My Ph.D. work was motivated by challenges in analyzing cosmic microwave background (CMB) data. I focused on the statistical modeling of one of the CMB foregrounds, namely the emission of interstellar dust. I developed data-driven models using the wavelet scattering transform — a technique closely related to the mathematics of convolutional neural networks. <a href="pdfs/thesis.pdf" rel="noreferrer noopener" target="_blank">Download my Ph.D. thesis</a>. -->
+        </p>
+      </section>
+      <!-- Research -->
+      <section id="research">
+        <h2>Research Highlights</h2>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Bayesian Blind Denoising with Gibbs Diffusion
+              <br><span style="font-size:0.8em; color:#666" >February 2024</span>
+            </h3>
+            <p>
+              Blind denoising problems are not exclusive to natural image processing; they are also prevalent in many scientific applications where the noise distribution is unknown or hard to model. In our new <a href="https://arxiv.org/abs/2402.19455" rel="noreferrer noopener" target="_blank">preprint</a>, we introduce <em>GDiff</em>, a novel solution to <em>blind denoising</em> in a fully Bayesian context. By combining Gibbs sampling and a diffusion model, we build a rigorous method to sample the posterior distribution of the signal and the noise parameters for any kind of diffusion-based signal prior!
+              
+              <br><br>We show that GDiff is directly relevant to the analysis of cosmic microwave background (CMB) data, by taking an original view on the problem of separating the CMB from its foregrounds. Have you ever thought of the CMB as <em>the noise</em> of a blind denoising problem, and the foregrounds as the <em>signal</em>? From that perspective, we show that GDiff can directly separate dust and CMB while solving cosmological inference at the same time! Stay tuned for future applications to observational data!
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/gdiff_illustration_2.jpg" class="image fit thumb">
+              <img src="images/fulls/gdiff_illustration_2.jpg" alt="GDiff: Separation of dust/CMB (top) and cosmological constraints (bottom)"/>
+            </a>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Removing Dust from CMB Observations with Diffusion Models
+              <br><span style="font-size:0.8em; color:#666" >October 2023</span>
+            </h3>
+            <p>
+              Diffusion models have revolutionized the modeling of natural images. Can they also help us to analyze cosmic microwave background (CMB) data? Thanks to my talented intern David Heurtel-Depeiges, and the collaboration of Blaskeley Burkhart and Ruben Ohana, we make a <a href="https://arxiv.org/abs/2310.16285" rel="noreferrer noopener" target="_blank">first demonstration</a> of the potential of diffusion models for the separation of Galactic dust and CMB. We show that dust+CMB observations can be seen as the result of a diffusion process that can be reversed in time, thus naturally solving source separation.
+              <br><br>
+              We are already working on the next step: a diffusion-based approach for cosmological inference. Stay tuned!
+
+              <br><br><span style="font-size:0.8em"><b>Update 11/23:</b> Spotlight talk at ML4PS NeurIPS 2023 Workshop!</span>
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/diffusion_dust_cmb.png" class="image fit thumb">
+              <img src="images/fulls/diffusion_dust_cmb.png" alt="Our diffusion model enables the separation of dust and CMB from the additive mixture y."/>
+            </a>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Stacking for Simulation-Based Inference
+              <br><span style="font-size:0.8em; color:#666" >October 2023</span>
+            </h3>
+            <p>
+              With simulation-based inference, it is typical to end up with a multitude of models/approximations of the same target posterior distribution. This usually results from the investigation of different inference algorithms, different architectures, or can simply be due to the randomness of initialization and stochastic gradients. While most practitioners usually choose to select the best of their models, with Yuling Yao and Justin Domke, we show that there is much better to do, and it's called <em>stacking</em>. We show that models can all be combined at once in a systematic way to improve precision, calibration, coverage, and bias at the same time. Check out our new preprint on <a href="https://arxiv.org/abs/2310.17009" rel="noreferrer noopener" target="_blank">Simulation-Based Stacking</a>!
+
+              <br><br><span style="font-size:0.8em"><b>Update 01/24:</b> Accepted to AISTATS 2024!</span>
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/stacking_illustration.png" class="image fit thumb">
+              <img src="images/fulls/stacking_illustration.png" alt="Stacking can help to improve the log predictive density of the posterior approximation (right) and can correct for miscalibration issues revealed by rank statistics (left)."/>
+            </a>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>SimBIG Collaboration: Second Wave of Papers
+              <br><span style="font-size:0.8em; color:#666" >October 2023</span>
+            </h3>
+            <p>
+              We are taking simulation-based inference for the analysis of galaxy clustering to the next level with our second release of papers! We now explore galaxy clustering data through the lenses of the <a href="https://arxiv.org/abs/2310.15250" rel="noreferrer noopener" target="_blank">wavelet scattering transform</a>, <a href="https://arxiv.org/abs/2310.15256" rel="noreferrer noopener" target="_blank">convolutional networks</a>, and <a href="https://arxiv.org/abs/2310.15243" rel="noreferrer noopener" target="_blank">bispectrum</a> statistics. For each of these, we get new cosmological constraints leveraging non-linear information from the data. Check out our <a href="https://changhoonhahn.github.io/simbig/current/" rel="noreferrer noopener" target="_blank">new website</a> for more information!
+              <br><br>
+              With Michael Eickenberg, we led the <a href="https://arxiv.org/abs/2310.15250" rel="noreferrer noopener" target="_blank">wavelet scattering transform (WST) analysis</a>. The WST statistics capture a wealth of non-Gaussian information from the data improving constraints on cosmological parameters. However, we show in our paper that these statistics might be <em>too rich</em> as they can also capture unrealistic specifics of the forward models, raising model misspecifications issues when applied to observational data. Our next challenge will be to address this in detail!
+
+              <br><br><span style="font-size:0.8em"><b>Update 02/24:</b> Accepted in PRD!</span>
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/boss_wt_anim.gif" class="image fit thumb">
+              <img src="images/fulls/boss_wt_anim.gif" alt="Wavelet transform on BOSS galaxy survey data (CMASS SGC)."/>
+            </a>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Polymathic AI and Multiple Physics Pretraining
+              <br><span style="font-size:0.8em; color:#666" >October 2023</span>
+            </h3>
+            <p>
+              I am lucky to be part of the amazing <a href="https://polymathic-ai.org/" rel="noreferrer noopener" target="_blank">Polymathic AI</a> initiative which aims to create a foundation model for advancing scientific discovery. We recently released a series of paper, check out our <a href="https://polymathic-ai.org/blog/" rel="noreferrer noopener" target="_blank">blog</a> to find out about it!
+              <br><br>
+              In particular, in a <a href="https://arxiv.org/abs/2310.02994" rel="noreferrer noopener" target="_blank">project led by Michael McCabe</a>, we introduce “Multiple Physics Pretraining”, an autoregressive task-agnostic pretraining approach for physical surrogate modeling. In this paper, we notably show that a single transformer model trained on a broad range of physical tasks can perform better than task-specific models on a variety of downstream applications.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <iframe width="auto" height="auto" controls class="image fit" src="https://www.youtube.com/embed/NsBWGEXZC4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Statistical Component Separation for Targeted Signal Recovery in Noisy Mixtures
+              <br><span style="font-size:0.8em; color:#666" >June 2023</span>
+            </h3>
+            <p>
+              In a <a href="https://arxiv.org/abs/2102.03160" rel="noreferrer noopener" target="_blank">2021 paper</a>, we had introduced a new algorithm to separate astrophysical signals with very distinctive statistical natures. Since then, this method has found interest in various astrophysical applications such as the <a href="https://arxiv.org/abs/2102.03160" rel="noreferrer noopener" target="_blank">denoising of dust emission maps</a>, the <a href="https://arxiv.org/abs/2305.14419" rel="noreferrer noopener" target="_blank">separation of dust and CIB</a>, or the <a href="https://arxiv.org/abs/2301.11981" rel="noreferrer noopener" target="_blank">removal of glitches in seismic data from the InSight Mars mission</a>. With Michael Eickenberg, we now explore some mathematical aspects of this method and provide first denoising benchmarks in our new <a href="https://arxiv.org/abs/2306.15012" rel="noreferrer noopener" target="_blank">preprint</a>.
+
+              <br><br><span style="font-size:0.8em"><b>Update 02/24:</b> Published in TMLR!</span>
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/stat_source_sep.jpg" class="image fit thumb">
+              <img src="images/fulls/stat_source_sep.jpg" alt="We compare denoised dust images with our method (middle row) to results (when available) from the BM3D denoiser (bottom row) for both Gaussian and non-Gaussian noises."/>
+            </a>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>SimBIG: Simulation-Based Inference of Galaxies
+              <br><span style="font-size:0.8em; color:#666" >November 2022</span>
+            </h3>
+            <p>
+              Glad to announce the release of the two first papers of the SimBIG collaboration (led by ChangHoon Hahn): <a href="https://arxiv.org/abs/2211.00723" rel="noreferrer noopener" target="_blank">letter</a>, <a href="https://arxiv.org/abs/2211.00660" rel="noreferrer noopener" target="_blank">mock challenge</a>. The SimBIG framework enables the analysis of cosmological information from galaxy surveys on small nonlinear scales using simulation-based inference. It relies on the SimBIG forward model, which connects the cosmological parameters to realistic mock galaxy surveys. Take a <a href="https://youtube.com/playlist?list=PLQk8Faa2x0twK3fgs55ednnHD2vbIzo4z" rel="noreferrer noopener" target="_blank">look</a> at how this model compares to BOSS data!
+
+              <br><br><span style="font-size:0.8em"><b>Update 10/23:</b> Published in PNAS and JCAP!</span>
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <iframe width="auto" height="auto" controls class="image fit" src="https://www.youtube.com/embed/videoseries?list=PLQk8Faa2x0twK3fgs55ednnHD2vbIzo4z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Generative Models of Multi-frequency Dust Emission Maps
+              <br><span style="font-size:0.8em; color:#666" >August 2022</span>
+            </h3>
+            <p>
+              Check out <a href="http://arxiv.org/abs/2208.03538" rel="noreferrer noopener" target="_blank">our recent paper</a>, where we use the Wavelet Phase Harmonic statistics to build generative models of multi-frequency dust emission maps from a single example. Want to try this on your own data? Take a look at the <a href="https://github.com/bregaldo/dust_genmodels" rel="noreferrer noopener" target="_blank">code</a> associated with the paper.
+
+              <br><br><span style="font-size:0.8em"><b>Update 01/23:</b> Published in the Astrophysical Journal!</span>
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/multifreq_synth.jpg" class="image fit thumb">
+              <img src="images/fulls/multifreq_synth.jpg" alt="Multi-frequency synthesis of intensity maps (bottom row) compared to the original maps (top row)."/>
+            </a>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Wavelet Moments for Cosmological Parameter Estimation
+              <br><span style="font-size:0.8em; color:#666" >April 2022</span>
+            </h3>
+            <p>
+              I was recently involved in <a href="https://arxiv.org/abs/2204.07646" rel="noreferrer noopener" target="_blank">Eickenberg et al. paper</a>, which introduced a new set of wavelet statistics, called "Wavelet Moments", to extract non-Gaussian information from 3D cosmological fields. Fisher forecasts based on the Quijote simulations show that these statistics improve constraints on the cosmological parameters by a factor 5 to 10 with respect to the power spectrum baseline. 
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/fig_ellipse_triangle.png" class="image fit thumb">
+              <img src="images/fulls/fig_ellipse_triangle.png" alt="Constraints on the cosmological parameters for the Wavelet Moments and the power spectrum."/>
+            </a>
+          </article>
+           <!--
+          <article class="col-6 col-12-xsmall work-item">
+            <h3>Statistical Denoising of Dust Polarized Emission Maps</h3>
+            <p>
+              In this <a href="https://arxiv.org/abs/2102.03160" rel="noreferrer noopener" target="_blank">paper</a>, we introduce a new method to "statistically" denoise observational dust polarization maps. While for standard denoising, the goal is to retrieve the noise-free map, here we tackle a seemingly simpler problem: retrieving the statistical properties of the noise-free map.
+            </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/simulated_increments.png" class="image fit thumb">
+              <img src="images/fulls/simulated_increments.png" alt="Distribution of the increments of simulated polarization maps for the noisy/denoised/truth maps."/>
+            </a>
+          </article>
+            -->
+           <article class="col-12 col-12-xsmall work-item">
+            <h3>Ph.D. Thesis: Statistical Modeling of the Polarized Emission of Interstellar Dust
+              <br><span style="font-size:0.8em; color:#666" >November 2021</span>
+            </h3>
+            I conducted my Ph.D. research at the LPENS, École Normale Supérieure, Paris, under the supervision of François Levrier and François Boulanger. My work was motivated by challenges in analyzing cosmic microwave background (CMB) data. I focused on the statistical modeling of one of the CMB foregrounds, namely the emission of interstellar dust. These foregrounds constitute major obstacles for the next generation of CMB experiments. I developed data-driven models using the wavelet scattering transform — a technique closely related to the mathematics of convolutional neural networks. You can learn more about this in my <a href="pdfs/thesis.pdf" rel="noreferrer noopener" target="_blank">Ph.D. thesis</a>.
+           </article>
+        </div>
+      </section>
+      <!-- Papers -->
+      <section id="papers">
+        <h2>Selected Papers</h2>
+        <div class="row">
+          <div class="col-12 col-12-small">
+            <!-- TODO: Add your citations  -->
+            <ol>
+              <li>
+                D. Heurtel-Depeiges, C. C. Margossian, R. Ohana & B. <u class="dotted">Régaldo-Saint Blancard</u>; <b>Listening to the Noise: Blind Denoising with Gibbs Diffusion</b>;
+                <a href="https://arxiv.org/abs/2402.19455" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                D. Heurtel-Depeiges, B. Burkhart, R. Ohana & B. <u class="dotted">Régaldo-Saint Blancard</u>; <b>Removing Dust from CMB Observations with Diffusion Models</b>; ML4PS Workshop at NeurIPS (2023).
+                <a href="https://arxiv.org/abs/2310.16285" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                Y. Yao, B. <u class="dotted">Régaldo-Saint Blancard</u> & J. Domke; <b>Simulation Based Stacking</b>; AISTATS (2024).
+                <a href="https://arxiv.org/abs/2310.17009" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                B. <u class="dotted">Régaldo-Saint Blancard</u>, C. Hahn, S. Ho, J. Hou, P. Lemos, E. Massara, C. Modi, A. Moradinezhad Dizgah, L. Parker, Y. Yao & M. Eickenberg; <b>SimBIG: Galaxy Clustering Analysis with the Wavelet Scattering Transform</b>; Physical Review D (2024).
+                <a href="https://arxiv.org/abs/2310.15250" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <a href="https://doi.org/10.1103/PhysRevD.109.083535" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+              </li>
+              <li>
+                C. Hahn, P. Lemos, L. Parker,  B. <u class="dotted">Régaldo-Saint Blancard</u>, M. Eickenberg, S. Ho, J. Hou,  E. Massara, C. Modi, A. Moradinezhad Dizgah & D. Spergel; <b>SimBIG: The First Cosmological Constraints from Non-Gaussian and Non-Linear Galaxy Clustering</b>; (2023)
+                <a href="https://arxiv.org/abs/2310.15246" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                M. McCabe, B. <u class="dotted">Régaldo-Saint Blancard</u>, L. Holden Parker, R. Ohana, M. Cranmer, A. Bietti, M. Eickenberg, S. Golkar, G. Krawezik, F. Lanusse, M. Pettee, T. Tesileanu, K. Cho & S. Ho; <b>Multiple Physics Pretraining for Physical Surrogate Models</b>; AI4Science Workshop at NeurIPS - Oral & Best Paper Award (2023)
+                <a href="https://arxiv.org/abs/2310.02994" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                B. <u class="dotted">Régaldo-Saint Blancard</u> & M. Eickenberg; <b>Statistical Component Separation for Targeted Signal Recovery in Noisy Mixtures</b>; Transactions on Machine Learning Research (2024).
+                <a href="https://arxiv.org/abs/2306.15012" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                C. Hahn, M. Eickenberg, S. Ho, J. Hou, P. Lemos, E. Massara, C. Modi, A. Moradinezhad Dizgah, B. <u class="dotted">Régaldo-Saint Blancard</u> & M. Abidi; <b>SimBIG: A Forward Modeling Approach To Analyzing Galaxy Clustering</b>; Proceedings on National Academy of Sciences (2023).
+                <a href="https://arxiv.org/abs/2211.00723" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a><a href="https://doi.org/10.1073/pnas.2218810120" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                B. <u class="dotted">Régaldo-Saint Blancard</u>, E. Allys, C. Auclair, F. Boulanger, M. Eickenberg, F. Levrier, L. Vacher & S. Zhang; <b>Generative Models of Multi-channel Data from a Single Example - Application to Dust Emission</b>; The Astrophysical Journal (2023).
+                <a href="https://arxiv.org/abs/2208.03538" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a><a href="https://dx.doi.org/10.3847/1538-4357/aca538" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                M. Eickenberg, E. Allys, A. Moradinezhad Dizgah, P. Lemos, E. Massara, M. Abidi, C. Hahn, S. Hassan, B. <u class="dotted">Régaldo-Saint Blancard</u>, S. Ho, S. Mallat, J. Anden & F. Villaescusa-Navarro; <b>Wavelet Moments for Cosmological Parameter Estimation</b>;
+                <a href="https://arxiv.org/abs/2204.07646" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <!-- <a href="#" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>  -->
+              </li>
+              <li>
+                N. Jeffrey, F. Boulanger, B. D. Wandelt, B. <u class="dotted">Regaldo-Saint Blancard</u>, E. Allys & F. Levrier; <b>Single frequency CMB B-mode inference with realistic foregrounds from a single training image</b>; Monthly Notices of the Royal Astronomical Society: Letters (2021).
+                <a href="https://arxiv.org/abs/2111.01138" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <a href="https://doi.org/10.1093/mnrasl/slab120" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+              </li>
+              <li>
+                B. <u class="dotted">Regaldo-Saint Blancard</u>, E. Allys, F. Boulanger, F. Levrier & N. Jeffrey; <b>A new approach for the statistical denoising of Planck interstellar dust polarization data</b>; Astronomy & Astrophysics: Letters (2021).
+                <a href="https://arxiv.org/abs/2102.03160" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <a href="https://doi.org/10.1051/0004-6361/202140503" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+              </li>
+              <li>
+                B. <u class="dotted">Regaldo-Saint Blancard</u>, S. Codis, J. R. Bond & G. Stein; <b>Statistical exploration of halo anisotropic clustering and intrinsic alignments with the mass-Peak Patch algorithm</b>; Monthly Notices of the Royal Astronomical Society (2021).
+                <a href="https://arxiv.org/abs/2101.01455" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <a href="https://doi.org/10.1093/mnras/stab927" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+              </li>
+              <li>
+                B. <u class="dotted">Regaldo-Saint Blancard</u>, F. Levrier, E. Allys, E. Bellomi & F. Boulanger; <b>Statistical description of dust polarized emission from the diffuse interstellar medium - A RWST approach</b>; Astronomy & Astrophysics (2020).
+                <a href="https://arxiv.org/abs/2007.08242" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <a href="https://doi.org/10.1051/0004-6361/202038044" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+              </li>
+              <li>
+                E. Allys, F. Levrier, S. Zhang, C. Colling, B. <u class="dotted">Regaldo-Saint Blancard</u>, F. Boulanger, P. Hennebelle & S. Mallat; <b>The RWST, a comprehensive statistical description of the non-Gaussian structures in the ISM</b>; Astronomy & Astrophysics (2019).
+                <a href="https://arxiv.org/abs/1905.01372" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-download">ArXiv</a>
+                <a href="https://doi.org/10.1051/0004-6361/201834975" rel="noreferrer noopener" target="_blank" class="button primary icon xsmall solid fa-external-link-alt">DOI</a>
+              </li>
+            </ol>
+            <ul class="actions">
+              <!-- TODO: Add link to database of all papers -->
+              <li>
+                <a
+                  href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Regaldo-Saint%20Blancard%2C%20Bruno%22&sort=date%20desc%2C%20bibcode%20desc&p_=0"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button"
+                  >All Publications (ADS)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://scholar.google.com/citations?user=TfcmfBQAAAAJ"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  class="button"
+                  >All Publications (Google Scholar)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Software -->
+      <section id="software">
+        <h2>Software</h2>
+        <!-- TODO: Add Software  -->
+        <p>I am committed to promoting open-source practices to facilitate the reproducibility of my research. You can find all the open-source projects I have been involved in on my <a href="https://github.com/bregaldo">GitHub page</a>. I have also developed a few Python packages that you might find useful for your research:
+        </p>
+        <div class="table-wrapper">
+          <table class="alt">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://github.com/bregaldo/pywst">PyWST</a></td>
+                <td>
+                  Python package for the statistical analysis of 2D data with the (Reduced) Wavelet Scattering Transform.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bregaldo/pywph">PyWPH</a></td>
+                <td>
+                  Python package for GPU-accelerated computations of the Wavelet Phase Harmonic statistics from 2D data.
+                </td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/bregaldo/galactic_wavelets">GalacticWavelets</a></td>
+                <td>
+                  Python package for GPU-accelerated computations of Wavelet Scattering Statistics for 3D fields and Galaxy Surveys.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Teaching -->
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="row">
+          <div class="col-12 col-12-small">
+            <ul>
+              <li>
+                2018 - 2021: Teaching assistant at the <a href="https://www.ens.psl.eu/en" rel="noreferrer noopener" target="_blank">École Normale Supérieure</a>, Paris, for the course "<b>Numerical methods for differential equations in Physics</b>" (Master's level, faculty: L. Tuckerman). <a href="https://github.com/bregaldo/num_phy_exercises" rel="noreferrer noopener" target="_blank">Exercises</a>.
+              </li>
+              <li>
+                2019 - 2021: Lecturer at the <a href="https://www.ens.psl.eu/en" rel="noreferrer noopener" target="_blank">École Normale Supérieure</a>, Paris, for the course "<b>Physique pour Tous</b>" ("Physics for All") intended for a broad non-scientific audience.
+              </li>
+              <li>
+                2014 - 2015: Educational coordinator for homework assistance program at <a href="https://assolerocher.org/" rel="noreferrer noopener" target="_blank">Association Le Rocher</a> (primary and secondary levels).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Talks -->
+      <section id="talks">
+        <h2>Talks</h2>
+        <div class="row">
+          <div class="col-12 col-12-small">
+            <!-- TODO: Add talks  -->
+            I try to keep track of some of my past talks in my <a href="pdfs/CV.pdf" rel="noreferrer noopener" target="_blank">CV</a>. Fun fact, I gave a TEDx talk during my Ph.D. on the topic "Un Univers sans limite ?" (in French, at Pôle Universitaire Léonard de Vinci, Paris-La Défense). You can watch it <a href="https://www.youtube.com/watch?v=L_rQraFnKWc">here</a>!
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="row">
+          <div class="col-6 col-12-small">
+            <ul class="labeled-icons">
+              <li>
+                <h3 class="icon solid fa-home">
+                  <span class="label">Address</span>
+                </h3>
+                <a href="http://flatironinstitute.org">Flatiron Institute</a
+                ><br />
+                CCM, 308<br />
+                162 Fifth Avenue<br />
+                New York, NY 10010<br />
+                United States
+              </li>
+              <!-- TODO: Add phone if you want
+              <li>
+                <h3 class="icon solid fa-mobile-alt">
+                  <span class="label">Phone</span>
+                </h3>
+                000-000-0000
+              </li>
+              -->
+              <li>
+                <h3 class="icon solid fa-envelope">
+                  <span class="label">Email</span>
+                </h3>
+                <!-- TODO: Add email -->
+                <a href="mailto:bregaldo@flatironinstitute.org"
+                  >bregaldo[at]flatironinstitute.org</a
+                >
+              </li>
+              <li>
+                <h3 class="icon brands fa-github">
+                  <span class="label">GitHub</span>
+                </h3>
+                <a href="https://github.com/bregaldo">https://github.com/bregaldo</a
+                >
+              </li>
+              <li>
+                <h3 class="icon brands fa-linkedin">
+                  <span class="label">LinkedIn</span>
+                </h3>
+                <a href="https://fr.linkedin.com/in/bruno-r%C3%A9galdo-saint-blancard-35260a114">https://www.linkedin.com</a
+                >
+              </li>
+            </ul>
+            <ul class="icons">
+              <!-- TODO: Add your social media handles here -->
+              <!-- Other icons are available here: https://fontawesome.com/v4.7/icons/ just change the fa-tag -->
+              <!--<li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-vimeo"
+                  ><span class="label">Vimeo</span></a
+                  >
+              </li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <a
+          href="https://www.simonsfoundation.org/flatiron/"
+          class="image logo"
+          target="_blank"
+          id="logo"
+          rel="noreferrer noopener"
+        >
+        <img src="images/Flatiron+Institute_white.svg" alt="logo" id="logo-icon" style="border-radius: 0;" />
+        </a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- TODO: Remove if not using Mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </body>
+</html>
